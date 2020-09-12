@@ -10,6 +10,7 @@ body{
 .perfil{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 10px;
+    padding: 15px;
 }
 .perfil img{
     width: 20%;
@@ -20,10 +21,13 @@ body{
 div{
     float:left;
     margin-right:5px;
+    margin-left: 5px;
 }
 
-div > img{
+.column img{
    height:400px;
     width:400px;
+    margin: 5px;
+    justify-content: center;
 }
 
