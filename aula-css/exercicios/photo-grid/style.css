@@ -2,9 +2,10 @@ body{
     background-color: white;
 }
 
-.gallery{
-    display: flex;
-    justify-content: center;
+div{
+    float:left;
+    margin-right:5px;
+    margin-left: 5px;
 }
 
 .perfil{
@@ -12,22 +13,38 @@ body{
     margin: 10px;
     padding: 15px;
 }
+
 .perfil img{
     width: 20%;
     height: auto;
     border-radius: 50%;
     float: left;
 }
-div{
-    float:left;
-    margin-right:5px;
-    margin-left: 5px;
+
+.gallery{
+    display: flex;
+    justify-content: center;
 }
 
 .column a img{
-   height:400px;
+    height:400px;
     width:400px;
     margin: 5px;
     justify-content: center;
+}
+
+@media only screen and (max-width: 768px){
+    .gallery{
+        flex-direction: column;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+        flex: 100%;
+        max-width: 100%;
+    }
+    .column a img{
+        width: 100%;
+    }
 }
 
