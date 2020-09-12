@@ -1,4 +1,16 @@
+body{
+    background-color: white;
+}
 
+.gallery{
+    display: flex;
+    justify-content: center;
+}
+
+.perfil{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+}
 .perfil img{
     width: 20%;
     height: auto;
@@ -15,6 +27,3 @@ div > img{
     width:400px;
 }
 
-p{
-    text-align:center;
-}
