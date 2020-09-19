@@ -1,6 +1,10 @@
 programa {
 	funcao inicio() {
 		inteiro num1, num2, op, resultado = 0
+		caracter nova
+		nova = 'S'
+		
+		enquanto (nova != 'N'){
 		
 		escreva ("Informe o primeiro número. \n")  
 		leia (num1)
@@ -26,5 +30,8 @@ programa {
 		}  
 		
 		escreva ("O resultado da operação é: ", resultado)
+		escreva ("\nDeseja realizar uma nova operação? [S/N] ")
+		leia (nova)
+		}
 	}
 }
