@@ -8,3 +8,4 @@ function checarsepodedirigir() {
         alert ('Ainda não pode dirigir!')
     }
 }
+checarsepodedirigir ()
