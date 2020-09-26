@@ -1,5 +1,6 @@
 function saoDiferentes(){
-    document.querySelector('numero1, numero2').valueAsNumber;
+    document.querySelector('numero1').valueAsNumber;
+    document.querySelector('numero2').valueAsNumber;
     if (numero1 =! numero2){
         let div = document.createElement('div');
         div.innerText = 'Os valores são diferentes';
@@ -13,7 +14,8 @@ function saoDiferentes(){
     }
 }
 function resetar(){
-    document.getElementById('numero1, numero2').value='';
+    document.getElementById('numero1').value='';
+    document.getElementById('numero2').value='';
     document.getElementById('os valores são diferestes, não são diferentes').remove();
 }
 
