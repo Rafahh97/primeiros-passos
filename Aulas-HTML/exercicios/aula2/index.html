@@ -1,0 +1,213 @@
+<!--
+Exercicio 2:
+Vamos tentar reproduzir a estrutura de um layout? 
+Escolha um site da sua preferência e tente identificar 
+nele os elementos que vimos hoje (<header>, <footer>,
+<nav>, <article>). Depois, crie um arquivo HTML e use
+as tags de uma forma que você acha que o conteúdo do site
+que você escolheu fique organizado.
+
+Coloque o link do site que você se baseou na descriçaão do PR 
+
+Não se preocupe em copiar os conteúdos ou em deixá-los bonitos.
+Lembre-se: HTML é sobre organizar o nosso conteúdo de uma forma semântica. 
+
+Entrega:
+ - Fazer fork do repositório pro seu usuário do github (caso já tenha feito o fork desse repositório, 
+   não precisa fazer novamente. Faça a atualização do fork pra ter os novos arquivos da aula)
+ - Fazer o clone do repositório "forkado" da sua conta do github para a sua máquina
+ - Colocar a resolução do exercício nesse arquivo (aulas-html/exercicios/aula2/index.html)
+ - Dar git push das alterações
+ - Abrir um pull request para o repositório original (da Womakers)
+ - Acompanhar o prazo e marcar a entrega no Classroom
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <header>
+            <title>zint.online</title>
+            <nav>
+               <ul>
+                   <li><a href="zint.online">CAPA</a></li>
+                   <li><a href="zint.online/edicao/">EDIÇÕES</a></li>
+                   <li><a href="zint.online/coluna/">COLUNAS</a></li>
+                   <li><a href="zint.online/paginas">PÁGINAS</a></li>
+               </ul> 
+            </nav>
+            <h1>ZINT</h1>
+            <nav>
+                <ul>
+                    <li><a href="https://www.instagram.com/revzint/"><img src="instagram.png"></a></li>
+                    <li><a href="https://twitter.com/revZINT"><img src="twitter.png"></a></li>
+                    <li><a href="https://open.spotify.com/user/revzint"><img src="spotify.png"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCU2l1pKQB3DTxjRpuxs2RNw"><img src="youtube.png"></a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=553193257843&text=&source=&data=&app_absent="><img src="whatsapp.png"></a></li>
+                    <li><a href="mailto:contato@zint.online"><img src="mail.png"></a></li>
+                </ul>
+            </nav>
+        </header>
+    </head>
+    <body>
+        <article>
+            <div>
+                <img src="fotocapa.png"> 
+                <h1>EDIÇÃO #X</h1>
+                <h2>TÍTULO DA EDIÇÃO</h2>
+                <h4>Descrição da edição</h4>
+            </div>
+        </article>
+
+        <form>
+            <fieldset>
+                <legend>Quer ficar por dentro os nossos lançamentos? Assine a nossa newsletter e nunca perca as novidades!</legend>
+
+                <div>
+                    <label for="nome">Nome:</label>
+                    <imput type="text" name="nome" id="nome">
+                </div>
+
+                <div>
+                    <label for="e-mail">E-mail:</label>
+                    <imput type="text" name="e-mail" id="e-mail"></imput>
+                </div>
+
+            </fieldset>
+            <button type="submit">Fazer inscrição!</button>
+        </form>
+
+        <section>
+            <header>
+                <h3>Principais matérias</h3>
+            </header>
+            <div class="btn-wrap">
+                <img src="fotocapa.jpg">
+                <h5>CAPA</h5>
+                <a href="https://zint.online/seçãodosite/materiacapa">
+                    <button>
+                        <h2>Título da matéria</h2>
+                        <h4>Autor da matéria</h4>
+                    </button>
+                </a>           
+            </div>
+            <div class="btn-wrap">
+                <img src="fotomateria01.jpg">
+                <h5>DESTAQUE</h5>
+                <a href="https://zint.online/seçãodosite/materia01">
+                    <button>
+                        <h2>Título da matéria</h2>
+                        <h4>Autor da matéria</h4>
+                    </button>
+                </a>
+            </div>
+            <div class="btn-wrap">
+                <img src="fotomateria02.jpg">
+                <h5>DESTAQUE</h5>
+                <a href="https://zint.online/seçãodosite/materia02">
+                    <button>
+                        <h2>Título da matéria</h2>
+                        <h4>Autor da matéria</h4>
+                    </button>
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <header>
+                <h3>DEMAIS MATÉRIAS</h3>
+            </header>
+            <article>
+                <a href="https://zint.online/seçãodosite/matéria001/"><img src="fotomateria001.png"></a>
+                <a href="https://zint.online/seçãodosite/matéria001/">
+                    <button>
+                        <h2>Título da matéria</h2>
+                        <h4>Autor da matéria</h4>
+                    </button>
+                </a>
+            </article>
+            <article>
+                <a href="https://zint.online/seçãodosite/matéria002/"><img src="fotomateria002.png"></a>
+                <a href="https://zint.online/seçãodosite/matéria002/">
+                    <button>
+                        <h2>Título da matéria</h2>
+                        <h4>Autor da matéria</h4>
+                    </button>
+            </article>
+            <article>
+                <a href="https://zint.online/seçãodosite/matéria003/"><img src="fotomateria003.png"></a>
+                <a href="https://zint.online/seçãodosite/matéria003/">
+                    <button>
+                        <h2>Título da matéria</h2>
+                        <h4>Autor da matéria</h4>
+                    </button>
+            </article>
+        </section>
+
+        <article>
+            <h3>CONTEÚDO</h3>
+            <a href="https://zint.online/colabs/autor01/">Autor 01</a>
+            <a href="https://zint.online/colabs/autor02/">Autor 02</a>
+            <a href="https://zint.online/colabs/autor03/">Autor 03</a>
+            <h3>REVISÃO&EDIÇÃO</h3>
+            <a href="https://zint.online/colabs/editor01/">Editor 01</a>
+            <a href="https://zint.online/colabs/editor02/">Editor 02</a>
+            <h3>MONTAGEM</h3>
+            <a href="https://zint.online/colabs/designer/">Designer</a>
+            <img src="Zcapa.png">
+        </article>
+
+        <article>
+            <h1>Negritude</h1>
+            <h4>com o Mês da Consciência Negra marcando o mês de novembro, reunimos em uma página especial todas as nossas matérias publicadas referente à cultura negra.</h4>
+            <a href="https://zint.online/negritude/"><button>LEIA TODO O CONTEÚDO</button></a>
+        </article>
+        <article>
+            <h3>PLAYLISTS DA EDIÇÃO</h3>
+            <a href="https://zint.online/playlist/artista01/"><img src="fotoplaylist01"></a>
+            <a href="https://zint.online/playlist/artista02/"><img src="fotoplaylist02"></a>
+            <a href="https://zint.online/playlist/artista03/"><img src="fotoplaylist03"></a>
+            <a href="https://zint.online/playlist/"><button>MAIS</button></a>
+        </article>
+        <article>
+            <h1>Orgulho Queer</h1>
+            <h4>como parte da nossa celebração pelo Mês do Orgulho, reunimos em uma página especial todas as matérias que já publicamos com pautas de relação direta à Comunidade Queer!</h4>
+            <a href="https://zint.online/orgulho/"><button>LEIA TODO O CONTEÚDO</button></a>
+        </article>
+
+        <article>
+            <h2>Leia Mais da Revista</h2>
+            <a href="https://zint.online/edicao/"><button>EDIÇÕES DA ZINT</button></a>
+        </article>
+    </body>
+    <footer>
+         <h1>ZINT</h1>
+         <nav>
+             <ul>
+                 <li><a href="https://www.instagram.com/revzint/"><img src="instagram.png"></a></li>
+                 <li><a href="https://twitter.com/revZINT"><img src="twitter.png"></a></li>
+                 <li><a href="https://open.spotify.com/user/revzint"><img src="spotify.png"></a></li>
+                 <li><a href="https://www.youtube.com/channel/UCU2l1pKQB3DTxjRpuxs2RNw"><img src="youtube.png"></a></li>
+                 <li><a href="https://api.whatsapp.com/send?phone=553193257843&text=&source=&data=&app_absent="><img src="whatsapp.png"></a></li>
+                 <li><a href="mailto:contato@zint.online"><img src="mail.png"></a></li>
+             </ul>
+         </nav>
+         <h5>PÁGINAS</h5>
+         <nav>
+            <ul>
+                <li><a href="zint.online">Capa</a></li>
+                <li><a href="zint.online/edicao/">Edições</a></li>
+                <li><a href="zint.online/paginas/">Páginas</a></li>
+                <li><a href="zint.online/orgulho/">Orgulho</a></li>
+                <li><a href="zint.online/negritude">Negritude</a></li>
+                <li><a href="zint.online/oscar/">Oscar 2020</a></li>
+            </ul> 
+         </nav>
+         <div id='busca'>
+            <form action="/search" class="search" method="get">
+                <label for="busca">QUERENDO PESQUISAR POR ALGO?</label>
+                <input id="txtbusca" name="q" type="text" placeholder="Search"/>
+                <button type="submit"><img src="lupa.png"></button>
+            </form>
+            </div>
+    </footer>
+</html>

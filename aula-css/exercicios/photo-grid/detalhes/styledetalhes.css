@@ -1,0 +1,42 @@
+body{
+    background-color: white;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+.content{
+    margin-right:5px;
+    margin-left: 5px;
+    display: flex;
+}
+.image img{
+    height:500px;
+    width:500px;
+    margin: 5px;
+    justify-content: center;
+}
+.details{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+}
+.details img{
+    width: 10%;
+    display: block;
+    border-radius: 50%;
+}
+@media only screen and (max-width: 768px){
+    .content {
+        display: flex;
+        flex-direction: column;
+        flex: 100%;
+        max-width: 100%;
+    }
+    .image img{
+        width: 100%;
+    }
+}
